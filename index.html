@@ -15,8 +15,8 @@
   </head>
   <body class="page">
     <header class="header block-width border">
-      <h1 class="header-title">&lt;/HTML&gt;</h1>
-      <p class="header-subtitle">закрывающий тег</p>
+      <span class="header-logo">&lt;/HTML&gt;</span>
+      <h1 class="header-title">закрывающий тег</h1>
     </header>
     <main class="main-content block-width">
       <article class="card border">
@@ -43,7 +43,7 @@
             нравится.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -106,7 +106,7 @@
             и я не справлясь. Но мне все понравилось.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -139,7 +139,7 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="card__like-button button" type="button">
               <span class="button__text like-text border">Like</span>
             </button>
           </div>
@@ -167,7 +167,7 @@
             очень рада и вдохновлена на дальнейшие свершения.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -230,7 +230,7 @@
             сделана, пришлось разбираться как работать над уже начатым проектом.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -295,7 +295,7 @@
             помощью опытных людей.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -356,7 +356,7 @@
             получалось, но тема "Адаптив" стала одной из любимых.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -419,7 +419,7 @@
             своим прогрессом.
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -484,7 +484,7 @@
             готова!
           </p>
           <div class="card-button">
-            <button class="card__icon-button">
+            <button class="card__icon-button" type="button">
               <svg
                 class="like-icon"
                 width="39"
@@ -546,15 +546,12 @@
           </svg>
           <p class="popap-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button
-          class="close-button button border"
-          type="button"
-          onclick="window['popap'].close()"
-          aria-controls="popap"
-        >
-          <span class="button__text close-button-text">ок</span>
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
+        <form method="dialog">
+          <button class="close-button button border" type="submit">
+            <span class="button__text close-button-text">ок</span>
+            <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>

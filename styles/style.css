@@ -33,7 +33,7 @@
 
 .header {
   background-color: var(--main-background-color);
-  font-family: var(--accent-font-family), serif;
+  font-family: var(--accent-font-family), fantasy;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,7 +47,7 @@
   inline-size: var(--block-width);
 }
 
-.header-title {
+.header-logo {
   font-size: clamp(
     3.0625rem,
     2.710387323943662rem + 1.5023474178403755vw,
@@ -56,7 +56,7 @@
   line-height: 100%;
 }
 
-.header-subtitle {
+.header-title {
   font-size: clamp(
     0.875rem,
     0.6769366197183099rem + 0.8450704225352111vw,
@@ -88,7 +88,7 @@
   aspect-ratio: 1/1;
   position: relative;
   border-width: 2px 0px;
-  border-color: var(--main-text-color);
+  border-color: var(--main-color);
   border-style: solid;
 }
 
@@ -135,7 +135,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   text-transform: uppercase;
   text-shadow:
@@ -278,7 +278,7 @@
 
 .button__text {
   display: block;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   font-size: 14px;
   line-height: 90%;
   position: relative;
@@ -359,7 +359,7 @@
 
 .popap-text {
   font-size: 14px;
-  font-family: var(--accent-font-family);
+  font-family: var(--accent-font-family), fantasy;
   line-height: 150%;
   font-weight: 400;
   display: block;
